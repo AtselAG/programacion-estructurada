@@ -1,0 +1,19 @@
+# Los ejecutables compilados no tienen extensión (gcc -o ej1 ej1.c),
+# así que se ignora todo y solo se permiten los tipos de archivo deseados.
+*
+!*/
+!.gitignore
+
+# Código
+!*.c
+!*.h
+
+# Documentos
+!*.pdf
+!*.docx
+
+# Configuración de VS Code
+!.vscode/*.json
+
+# Copias repetidas
+documentos/duplicados/
