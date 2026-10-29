@@ -1,4 +1,3 @@
-#include <bits/types/timer_t.h>
 #include <stdio.h>
 #include <time.h>
 
