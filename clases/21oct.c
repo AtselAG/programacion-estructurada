@@ -1,6 +1,7 @@
 #include <stdio.h>
-#include <string.h>
+#define max 3
 
+// Definicion de la estructura con el sinonimo de Rectangulo
 typedef struct rectangulo {
   float base;
   float altura;
@@ -9,33 +10,35 @@ typedef struct rectangulo {
   char caracter;
 } Rectangulo;
 
-typedef struct alumno {
-
-  int matricula;
-  int parcial1;
-  int parcial2;
-  int parcial3;
-
-} Alumno;
-
+// Funciones
 float calcArea(Rectangulo rectangulo);
 float calcPerimetro(Rectangulo rectangulo);
+void dibujarRectangulo(Rectangulo rectangulo);
 
+// Funcion principal
 int main(void) {
-  Rectangulo rectangulos[3];
+  Rectangulo rectangulos[max];
 
-  for (int i = 0; i < 3; i++) {
+  for (int i = 0; i < max; i++) {
     printf("Ingresa el la base del rectangulo %d: ", i + 1);
     scanf("%f", &rectangulos[i].base);
     printf("Ingresa el la altura del rectangulo %d: ", i + 1);
     scanf("%f", &rectangulos[i].altura);
     printf("Ingresa el caracter del rectangulo %d: ", i + 1);
-    // Limpia el buffer
     while (getchar() != '\n')
       ;
     scanf("%c", &rectangulos[i].caracter);
+    printf("\n");
 
-    rectangulos[0].area = calcArea(rectangulos[0]);
+    rectangulos[i].area = calcArea(rectangulos[i]);
+    rectangulos[i].perimetro = calcPerimetro(rectangulos[i]);
+  }
+
+  for (int i = 0; i < max; i++) {
+    dibujarRectangulo(rectangulos[i]);
+    printf("Area: %.2f\t Perimetro: %.2f", rectangulos[i].area,
+           rectangulos[i].perimetro);
+    printf("\n\n");
   }
 
   return 0;
@@ -48,4 +51,14 @@ float calcArea(Rectangulo rectangulo) {
 float calcPerimetro(Rectangulo rectangulo) {
 
   return 2 * rectangulo.base + 2 * rectangulo.altura;
+}
+
+void dibujarRectangulo(Rectangulo rectrangulo) {
+
+  for (int i = 0; i < rectrangulo.altura; i++) {
+    for (int j = 0; j < rectrangulo.base; j++) {
+      printf("%c ", rectrangulo.caracter);
+    }
+    printf("\n");
+  }
 }
