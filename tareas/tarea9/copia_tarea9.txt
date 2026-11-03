@@ -1,0 +1,5 @@
+Lista de Materias:
+Programación Estructurada
+Electricidad y Magnetismo
+Programación en Python
+Matemáticas Discretas

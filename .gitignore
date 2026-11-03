@@ -11,7 +11,7 @@
 # Documentos
 !*.pdf
 !*.docx
-
+!*.txt
 # Configuración de VS Code
 !.vscode/*.json
 
