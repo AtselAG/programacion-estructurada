@@ -1,0 +1,4 @@
+luna,miel,abeja,reina,corona
+sol,playa,arena,reloj,tiempo
+cable,tierra,fuego,artificial,inteligencia
+
