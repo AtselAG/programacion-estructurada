@@ -1,0 +1,7 @@
+Axel,11
+diego,7
+joscelyn,19
+luz,22
+Axel,24
+alberto,17
+luffy,39

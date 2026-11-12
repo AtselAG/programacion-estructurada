@@ -18,7 +18,8 @@ int main() {
     printf("Que linea quieres acceder?(1-%d): ", lineas);
     scanf("%d", &selected_line);
     if (pointToLine(file, lineas, selected_line) == 1) {
-      printf("Ingresa una linea valida dentro del rango (1-%d)\n", lineas);
+      printf("fuer durIngresa una linea valida dentro del rango (1-%d)\n",
+             lineas);
     }
   } else {
     printf("Error de apertura");

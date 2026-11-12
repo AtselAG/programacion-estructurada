@@ -1,4 +1,6 @@
 luna,miel,abeja,reina,corona
 sol,playa,arena,reloj,tiempo
 cable,tierra,fuego,artificial,inteligencia
-
+Casa,Arbol,Manguera,Carro,Llanta
+imperio,coronel,frito,pollo,kfc
+teclado,letra,poema,pluma,tinta
